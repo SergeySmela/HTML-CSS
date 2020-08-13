@@ -1,0 +1,107 @@
+:root {
+    
+}
+* {
+    margin: 0;
+    padding: 0px;
+}
+.header,
+.sidebar,
+.content,
+.footer {
+    min-height: 100px;
+}
+
+.header {
+    background-color: blue;
+}
+
+.sidebar {
+    background-color: goldenrod;
+}
+.sidebar p::first-letter {
+    color: red;}
+
+.sidebar p::first-line {
+    color: red;
+}
+.sidebar li:first-child,
+.sidebar :last-child {
+    background-color: red;
+
+}
+.content {
+    background-color: greenyellow;
+    width: 80%;
+}
+.content h2 {
+    background-color: lime;
+    display: inline-block;
+    padding: 5px, 20px;
+    border-radius: 5px 25px;
+    box-shadow: 0 5px 10px  hsl(120, 100%, 35%);
+    text-shadow: 5px 5px dimgrey;
+    margin-bottom: 30px;
+
+}
+.content h2:hover {
+    font-size: 2rem;
+    background-color: red;
+    box-shadow: 0 5px ;
+}
+.content h1 {
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+.content form {
+    background-color: yellow;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.content input {
+    display: block;
+    margin: 0 auto 15px;
+    font-size: ;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid white;
+    outline: none;
+}
+.content input:focus {
+    background-color: lightseagreen;
+}
+
+.content input:focus:placeholder {
+    color: red;
+}
+.content button {
+    border: none;
+    font-size: 1rem;
+    width: 20px;
+    padding: 8px 25px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: hsl(0, 100%, 25%);
+    box-shadow: 0 4px 7px hsl(0, 100%, 15%);
+    cursor: not-allowed;
+
+
+}
+.content button:focus {
+    background-color: hsl(0, 30%, 57%);
+    box-shadow: 0 4px 7px hsl(0, 100%, 15%);
+}
+.content button:active {
+    background-color: rgb(96, 195, 83);
+    box-shadow: 0 4px 7px hsla(98, 77%, 31%, 0.945);
+}
+
+.content input:last-of-type {
+    margin: 25;
+}
+.footer {
+    background-color: firebrick; 
+}
