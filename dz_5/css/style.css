@@ -1,0 +1,124 @@
+/* Good Luck! */
+header {
+    background-color: blue;
+}
+header h1 {
+    color: white;
+}
+.browsers {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+.browser {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    padding: 20px;
+    /* width: calc(100% / 3 - 60px); */
+    margin: 10px;
+
+}
+.content {
+    /* display: flex; */
+    flex-direction: column;
+    
+}
+h2 {
+    display: block;
+    text-align: center;
+    color: white;
+    animation: move 500ms ease,
+    decorate 2000ms 200ms linear infinite;
+}
+@keyframes move {
+    from {transform: translateX(100vw);
+
+    }
+    
+    to {
+        transform: translateX(0);
+    }
+
+}
+@keyframes decorate {
+    from {
+        color: red;
+    }
+    30% {color: orange;
+    }
+    45% {color: yellow;}
+    60% {color: green;}
+    75% {color: lightblue;}
+    90% {color: blue;}
+    to {
+        color: violet;
+    }
+}
+
+@keyframes remove {
+    from {transform: translate(-100vw);}
+    to {transform: translate(0);}
+}
+.content:hover h2 {
+    transform: 
+}
+.img {
+    align-self: flex-start;
+    width: 120px;
+    float: left;
+    margin-right: 10px;
+    
+}
+.content:hover img {
+    transform: rotate(360deg);
+}
+img {
+    width: 100%;
+    animation: 
+    spin 1000ms 200ms ease infinite,
+    remove 2000ms 200ms ease;
+}
+@keyframes spin {
+    from {transform: rotatez(0);
+    }
+    to {transform: rotatez(1turn);
+    }
+}
+
+.control {
+    display: flex;
+}
+.btn {
+    margin: 0 auto;
+    background-color: darkblue;
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+    box-shadow: 1px 2px 3px blue;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    transition: 
+    background-color 200ms 1000ms ease,
+    letter-spacing 300ms ease-in-out;
+}
+.btn:hover {
+    background-color: skyblue;
+    letter-spacing: 4px;
+}
+.btn:active {
+    transform: scale(0.95);
+}
+
+@media (min-width: 900px) {
+    .browser {
+            width: calc(100% / 2 - 60px);
+    }
+
+}
+@media (min-width: 1200px) {
+    .browser {
+        width: calc(100% / 3 - 60px);
+        }
+}
