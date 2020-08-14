@@ -1,14 +1,17 @@
 /* Good Luck! */
-header {
+header, footer {
     background-color: blue;
 }
-header h1 {
+header h1, footer a {
     color: white;
+    text-align: center;
 }
 .browsers {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
+    margin: 0 auto;
+    
 }
 .browser {
     display: flex;
@@ -30,6 +33,17 @@ h2 {
     color: white;
     animation: move 500ms ease,
     decorate 2000ms 200ms linear infinite;
+}
+footer li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    
+}
+
+footer ul {
+    text-align: center;
+
 }
 @keyframes move {
     from {transform: translateX(100vw);
@@ -60,9 +74,7 @@ h2 {
     from {transform: translate(-100vw);}
     to {transform: translate(0);}
 }
-.content:hover h2 {
-    transform: 
-}
+
 .img {
     align-self: flex-start;
     width: 120px;

@@ -60,7 +60,7 @@ img {
 }
 
 /* Только <img>, на которых изображены мужчины */
-.men {
+.man {
     transform: scale(.7);
 }
 
@@ -91,7 +91,10 @@ tbody th {
 }
 
 /* Только <th> и <td>, у которых есть атрибуты "rowspan", "colspan" */
-.rowspan-colspan {
+th[rowspan],
+td[rowspan],
+th[colspan],
+td[colspan] {
     font-style: italic;
 }
 
@@ -101,12 +104,14 @@ input {
 }
 
 /* Все <input>, кроме "кнопки", "radio" и "checkbox" */
-??? {
+[type='text'],
+[type='email'],
+[type='password'] {
     border: 2px solid aqua;
 }
 
 /* Все <b> секции "Follow us" */
-h2 > b {
+.follow-us b {
     color: purple;
 }
 
@@ -116,6 +121,6 @@ button {
 }
 
 /* Только <h3> секции "Follow us" */
-??? {
+.follow-us h3 {
     text-transform: uppercase;
 }
